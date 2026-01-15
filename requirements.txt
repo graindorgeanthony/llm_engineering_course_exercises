@@ -18,6 +18,7 @@ langchain-text-splitters
 langchain-openai
 langchain-chroma
 langchain-community
+langchain-ollama
 datasets==3.6.0
 matplotlib
 google-generativeai
@@ -36,3 +37,9 @@ sentence_transformers
 feedparser
 protobuf==3.20.2
 wandb
+diffusers
+soundfile
+accelerate
+safetensors
+huggingface-hub
+Pillow
