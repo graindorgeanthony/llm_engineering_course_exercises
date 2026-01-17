@@ -43,3 +43,5 @@ accelerate
 safetensors
 huggingface-hub
 Pillow
+mlx-lm
+ffmpeg
