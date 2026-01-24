@@ -45,3 +45,4 @@ huggingface-hub
 Pillow
 mlx-lm
 ffmpeg
+litellm
