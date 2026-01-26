@@ -46,3 +46,4 @@ Pillow
 mlx-lm
 ffmpeg
 litellm
+xgboost
