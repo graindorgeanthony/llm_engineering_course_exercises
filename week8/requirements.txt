@@ -1,0 +1,44 @@
+# Core Dependencies
+python-dotenv
+pydantic
+
+# LangChain & LangGraph
+langchain
+langchain-core
+langchain-openai
+langgraph
+
+# Vector Store & Embeddings
+chromadb
+sentence-transformers
+datasets
+
+# Web Scraping
+beautifulsoup4
+feedparser
+requests
+
+# Modal (for deployment)
+modal
+
+# Hugging Face (for pricer model)
+transformers
+torch
+bitsandbytes
+accelerate
+peft
+huggingface-hub
+
+# UI
+gradio>=4.16.0
+
+# Visualization
+plotly
+scikit-learn
+numpy
+
+# Logging
+tqdm
+
+# For notifications (optional)
+# If you want Pushover notifications, set PUSHOVER_USER and PUSHOVER_TOKEN env vars

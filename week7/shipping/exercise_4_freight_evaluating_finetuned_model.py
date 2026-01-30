@@ -40,15 +40,15 @@ BASE_MODEL = "meta-llama/Llama-3.2-3B"
 PROJECT_NAME = "freight_rates"  # Project name for your fine-tuning runs
 HF_USER = "Anthonygdg123"  # Your Hugging Face username
 
-LITE_MODE = True  # Must match what you used for training
+LITE_MODE = False  # Must match what you used for training
 
 DATA_USER = "Anthonygdg123"  # Your HF username for dataset
 DATASET_NAME = f"{DATA_USER}/freight_rates_lite" if LITE_MODE else f"{DATA_USER}/freight_rates_full"
 
 # ⚠️ IMPORTANT: Update these after fine-tuning in Colab!
 # Choose the best run (with the lowest eval/loss metric in wandb)
-RUN_NAME = "2026-01-28_10.25.50-lite"  # UPDATE THIS! e.g., "2026-01-28_15.30.45-lite"
-REVISION = None  # Set to specific revision if needed (usually None for latest)
+RUN_NAME = "2026-01-28_12.14.33"  # UPDATE THIS! e.g., "2026-01-28_15.30.45-lite"
+REVISION = "153cf9760d733831e1072f2b8eb2ccbbba069e90"  # Set to specific revision if needed (usually None for latest)
 
 PROJECT_RUN_NAME = f"{PROJECT_NAME}-{RUN_NAME}"
 HUB_MODEL_NAME = f"{HF_USER}/{PROJECT_RUN_NAME}"
