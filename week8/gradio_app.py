@@ -299,14 +299,14 @@ class GradioApp:
 - **Total Savings:** ${stats['total_savings']:.2f}
 """
     
-    def launch(self, share: bool = False):
+    def create_app(self):
         """
-        Launch the Gradio interface
+        Create and configure the Gradio interface
         
         Args:
             share: Whether to create a public link
         """
-        with gr.Blocks(title="Agentic AI Deal Finder") as ui:
+        with gr.Blocks(title="Agentic AI Deal Finder", theme=gr.themes.Soft()) as ui:
             log_data = gr.State([])
             use_modal_state = gr.State(False)
             
@@ -389,9 +389,21 @@ class GradioApp:
                 outputs=[plot, stats_display],
             )
         
-        ui.launch(share=share, inbrowser=True, theme=gr.themes.Soft())
+        return ui
+
+    def launch(self):
+        """
+        Launch the Gradio interface
+        
+        Args:
+            share: Whether to create a public link
+        """
+        ui = self.create_app()
+        ui.launch()
 
 
 if __name__ == "__main__":
     app = GradioApp()
-    app.launch(share=False)
+    app.launch()
+else:
+    app = GradioApp()
