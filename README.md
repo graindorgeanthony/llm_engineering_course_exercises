@@ -229,8 +229,7 @@ conda env create -f environment.yml
 conda activate llm-eng
 
 # Set up API keys in .env file
-export OPENAI_API_KEY="your-key"
-export ANTHROPIC_API_KEY="your-key"
+export OPENROUTER_API_KEY="your-key"
 
 # Run specific exercises
 python week1/exercise_1_llm_call.py
